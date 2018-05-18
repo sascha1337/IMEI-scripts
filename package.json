@@ -1,0 +1,19 @@
+{
+  "name": "tmobile-puppeteer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.6.0",
+    "batch": "^0.6.1",
+    "deathbycaptcha": "0.0.3",
+    "http": "0.0.0",
+    "public-proxy-finder": "^0.1.1",
+    "puppeteer": "^1.4.0"
+  }
+}

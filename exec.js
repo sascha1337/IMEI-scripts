@@ -3,6 +3,8 @@ const async = require("async");
 
 const express = require('express')
 var cors = require('cors')
+const https = require('https');
+
 
 const app = express()
 app.use(cors())
@@ -172,6 +174,14 @@ app.get('/add/:user/:imei', (req, res) => {
     
 })
 
+const options = {
+    cert: fs.readFileSync('/etc/letsencrypt/live/nilton.01r0s.de/fullchain.pem'),
+    key: fs.readFileSync('/etc/letsencrypt/live/nilton.01r0s.de/privkey.pem')
+};
+
+// app.listen(8080);
+
+
 app.listen(3000, () => {
 
     console.log('IMEI Toolkit 3000!')
@@ -192,3 +202,5 @@ app.listen(3000, () => {
             console.log(rowsCount); // Sure no actual need for this, just a way to test that all gone well.
     });
 })
+
+https.createServer(options, app).listen(443);

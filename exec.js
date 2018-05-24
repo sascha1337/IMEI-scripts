@@ -175,8 +175,8 @@ app.get('/add/:user/:imei', (req, res) => {
 })
 
 const options = {
-    cert: fs.readFileSync('/etc/letsencrypt/live/nilton.01r0s.de/fullchain.pem'),
-    key: fs.readFileSync('/etc/letsencrypt/live/nilton.01r0s.de/privkey.pem')
+    cert: fs.readFileSync(__dirname + '/fullchain.pem'),
+    key: fs.readFileSync(__dirname + '/privkey.pem')
 };
 
 // app.listen(8080);

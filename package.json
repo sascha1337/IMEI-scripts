@@ -15,6 +15,7 @@
     "deathbycaptcha": "0.0.3",
     "express": "^4.16.3",
     "firebase-admin": "^5.12.1",
+    "fs": "0.0.1-security",
     "http": "0.0.0",
     "imei_gencheck": "^4.0.0",
     "public-proxy-finder": "^0.1.1",

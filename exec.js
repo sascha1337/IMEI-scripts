@@ -159,7 +159,7 @@ app.get('/add/:user/:imei', (req, res) => {
                 data = xx.val();
                 
                 if(data === null){
-                    checkRef.set({imei: req.params.imei, status: "new", completed: false, result: "-", user: req.params.user, device,  tac: tac })
+                    checkRef.set({imei: req.params.imei, status: "new", addTimestamp: (new Date()).getTime(), completed: false, result: "-", user: req.params.user, device,  tac: tac })
                     res.send({msg: "IMEI Added to queue"});
                     
                 }else{

@@ -13,7 +13,7 @@
     "batch": "^0.6.1",
     "cors": "^2.8.4",
     "deathbycaptcha": "0.0.3",
-    "express": "^4.16.3",
+    "express": "^4.17.3",
     "firebase-admin": "^5.12.1",
     "fs": "0.0.1-security",
     "http": "0.0.0",
